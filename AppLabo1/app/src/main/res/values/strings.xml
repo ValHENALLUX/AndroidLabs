@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppLabo1</string>
+    <string name="btngo">GO!</string>
+    <string name="txtwelcome">Welcome !</string>
+</resources>
