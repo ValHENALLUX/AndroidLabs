@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">AppLabo1</string>
-    <string name="btngo">GO!</string>
+    <string name="btngo">GO TO CHILD ACTIVITY!</string>
     <string name="txtwelcome">Welcome !</string>
+    <string name="txtChildActivity">Child Activity</string>
+    <string name="btnMainActivity">SEND RESULT TO PARENT</string>
+    <string name="callBtn">Call</string>
+    <string name="linkBtn">Browse</string>
 </resources>
