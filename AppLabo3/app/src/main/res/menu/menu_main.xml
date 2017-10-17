@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item android:id="@+id/itemEmailId"
+        android:icon="@drawable/ic_action_email"
+        android:title="@string/emailTitleID"
+        app:showAsAction="always"/>
+    <item android:id="@+id/itemCallId"
+        android:icon="@drawable/ic_action_call"
+        android:title="@string/callTitleID"
+        app:showAsAction="always"/>
+    <item android:id="@+id/itemSearchId"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/searchTitleID"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+</menu>
