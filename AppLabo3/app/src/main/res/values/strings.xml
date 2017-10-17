@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AppLabo3</string>
+    <string name="emailTitleID">Mail</string>
+    <string name="callTitleID">Call</string>
+    <string name="searchTitleID">Search</string>
+    <string name="action_settings">Settings</string>
 </resources>
