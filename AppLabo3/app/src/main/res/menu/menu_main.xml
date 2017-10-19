@@ -5,6 +5,11 @@
     tools:context=".MainActivity">
 
     <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item
         android:id="@+id/itemEmailId"
         android:icon="@drawable/ic_action_email"
         android:title="@string/emailTitleID"
@@ -19,10 +24,5 @@
         android:icon="@drawable/ic_action_search"
         android:title="@string/searchTitleID"
         app:showAsAction="ifRoom"/>
-    <item
-        android:id="@+id/action_settings"
-        android:title="@string/action_settings"
-        android:orderInCategory="100"
-        app:showAsAction="never"/>
 
 </menu>
