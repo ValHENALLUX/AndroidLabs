@@ -20,9 +20,14 @@
         android:title="@string/callTitleID"
         app:showAsAction="always"/>
     <item
+        android:id="@+id/itemChildId"
+        android:title="Go to child!"
+        android:showAsAction="never"/>
+    <item
         android:id="@+id/itemSearchId"
         android:icon="@drawable/ic_action_search"
         android:title="@string/searchTitleID"
         app:showAsAction="ifRoom"/>
+
 
 </menu>

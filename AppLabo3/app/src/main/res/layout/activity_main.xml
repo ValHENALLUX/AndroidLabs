@@ -6,4 +6,57 @@
     android:layout_height="match_parent"
     tools:context="com.henallux.applabo3.MainActivity">
 
+    <Button
+        android:id="@+id/childBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/childBtnText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="127dp" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtName"
+        android:layout_alignBaseline="@+id/txtNameId"
+        android:layout_alignBottom="@+id/txtNameId"
+        android:layout_toLeftOf="@+id/txtNameId"
+        android:layout_toStartOf="@+id/txtNameId"
+        android:layout_marginRight="43dp"
+        android:layout_marginEnd="43dp" />
+    <EditText
+        android:id="@+id/txtNameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/childBtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/childBtn"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtAge"
+        android:layout_alignBaseline="@+id/txtAgeId"
+        android:layout_alignBottom="@+id/txtAgeId"
+        android:layout_alignLeft="@+id/txtName"
+        android:layout_alignStart="@+id/txtName" />
+    <EditText
+        android:id="@+id/txtAgeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/txtNameId"
+        android:layout_alignLeft="@+id/txtNameId"
+        android:layout_alignStart="@+id/txtNameId"
+        android:text="10"/>
+
 </RelativeLayout>
