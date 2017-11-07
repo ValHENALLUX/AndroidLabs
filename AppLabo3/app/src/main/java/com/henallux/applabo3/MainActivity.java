@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 //Toast.makeText(MainActivity.this, "Welcome to our wonderful world", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, ChildActivity.class);
                 intent.putExtra("infoId", "Message sent by the parent");
-                startActivityForResult(intent, 1);
+                startActivity(intent);
             }
         });
 
@@ -94,5 +94,31 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
         }
+    }
+
+    protected void onStart(Bundle savedInstanceState)
+    {
+        Log.i("lifeCycle", "MainActivity.onStart is executed");
+    }
+    protected void onResume(Bundle savedInstanceState)
+    {
+        Log.i("lifeCycle", "MainActivity.onResume is executed");
+    }
+
+    protected void onPause(Bundle savedInstanceState)
+    {
+        Log.i("lifeCycle", "MainActivity.onPause is executed");
+    }
+    protected void onStop(Bundle savedInstanceState)
+    {
+        Log.i("lifeCycle", "MainActivity.onStop is executed");
+    }
+    protected void onRestart(Bundle savedInstanceState)
+    {
+        Log.i("lifeCycle", "MainActivity.onRestart is executed");
+    }
+    protected void onDestroy(Bundle savedInstanceState)
+    {
+        Log.i("lifeCycle", "MainActivity.onDestroy is executed");
     }
 }

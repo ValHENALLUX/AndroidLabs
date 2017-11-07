@@ -5,6 +5,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -31,7 +32,33 @@ public class ChildActivity extends AppCompatActivity {
             }
         });*/
 
+        Log.i("lifeCycle", "ChildActivity.onCreate is executed");
+    }
 
+    protected void onStart(Bundle savedInstanceState)
+    {
+        Log.i("lifeCycle", "ChildActivity.onStart is executed");
+    }
+    protected void onResume(Bundle savedInstanceState)
+    {
+        Log.i("lifeCycle", "ChildActivity.onResume is executed");
+    }
+
+    protected void onPause(Bundle savedInstanceState)
+    {
+        Log.i("lifeCycle", "ChildActivity.onPause is executed");
+    }
+    protected void onStop(Bundle savedInstanceState)
+    {
+        Log.i("lifeCycle", "ChildActivity.onStop is executed");
+    }
+    protected void onRestart(Bundle savedInstanceState)
+    {
+        Log.i("lifeCycle", "ChildActivity.onRestart is executed");
+    }
+    protected void onDestroy(Bundle savedInstanceState)
+    {
+        Log.i("lifeCycle", "ChildActivity.onDestroy is executed");
     }
 
 }
